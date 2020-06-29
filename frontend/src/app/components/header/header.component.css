@@ -1,0 +1,25 @@
+.top-nav {
+    text-align: center;
+    background: aquamarine;
+    box-shadow: 2px 3px 5px mediumaquamarine;
+}
+
+.hamburger-left {
+    float: left;
+}
+
+.user-right {
+    float: right;
+}
+
+.top_left h2 {
+    margin-top: 0px !important;
+}
+
+.box_1 h3 {
+    margin-top: 0px;
+}
+
+.cart.box_1 {
+    font-weight: 600;
+}

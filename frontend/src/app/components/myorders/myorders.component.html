@@ -1,0 +1,16 @@
+<table class="table table-striped" style="margin: 20px 17rem; max-width: 76%;">
+    <tr>
+        <th>Order ID</th>
+        <th>Order Date</th>
+        <th>Discount</th>
+        <th>Final Price</th>
+        <th>Games</th>
+    </tr>
+    <tr *ngFor="let o of orders">
+        <td>{{o.purchaseid}}</td>
+        <td>{{o.purchasedt}}</td>
+        <td>{{o.discount}}</td>
+        <td>{{o.totalprice}}</td>
+        <td>{{o.games}}</td>
+    </tr>
+</table>

@@ -1,0 +1,31 @@
+
+<div class="women_main">
+	<!-- start content -->
+			<div class="row single">
+				<div class="col-md-9 det">
+				  <div class="single_left">
+					<div class="grid images_3_of_2">
+						
+						<img class="etalage_thumb_image" src="{{game.photos}}" class="img-responsive" style="margin-left: 17rem;width: 230px" />	
+						 <div class="clearfix"></div>		
+				  </div>
+				  <div class="desc1 span_3_of_2">
+					<h3>{{game.title}}</h3>
+					<span class="brand">Brand: {{game.brand}}</span>
+					<br>
+					<p>{{game.description}}</p>
+						<div class="price">
+							<span class="text">Price:</span>
+							<span class="price-new">Rs. {{game.price}}</span>
+						</div>
+					<div class="btn_form">
+						<a (click)="addToCart(game)">buy</a>
+					</div>
+			   	 </div>
+          	    <div class="clearfix"></div>
+          	   </div>
+	       </div>
+		   <div class="clearfix"></div>		
+	  </div>
+	<!-- end content -->
+</div>

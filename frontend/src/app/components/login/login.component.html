@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="main">
+        <!-- start registration -->
+        <div class="registration">
+            <div class="registration_left">
+                <h2>new user? <span> create an account </span></h2>
+                <div class="registration_form">
+                    <!-- Form -->
+                    <form>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="username"  [ngModelOptions]="{standalone: true}" placeholder="Username:" type="text" tabindex="1" required
+                                    autofocus>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" placeholder="email address:" type="email" tabindex="3"
+                                    required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" placeholder="phone:" type="text" tabindex="2" required
+                                    autofocus>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="address"  [ngModelOptions]="{standalone: true}" placeholder="address:" type="text" tabindex="2" required
+                                    autofocus>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="age" [ngModelOptions]="{standalone: true}" placeholder="age:" type="text" tabindex="2" required autofocus>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" placeholder="password" type="password" tabindex="4"
+                                    required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="confirmPassword" [ngModelOptions]="{standalone: true}" placeholder="retype password" type="password"
+                                    tabindex="4" required>
+                            </label>
+                        </div>
+                        <div>
+                            <button id="register-submit" (click)="signup()">Create an Account</button>
+                        </div>
+                        <div class="sky-form">
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>i agree to
+                                sachingames.com &nbsp;<a class="terms" href="#"> terms of service</a> </label>
+                        </div>
+                    </form>
+                    <!-- /Form -->
+                </div>
+            </div>
+            <div class="registration_left">
+                <h2>existing user</h2>
+                <div class="registration_form">
+                    <!-- Form -->
+                    <form>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="usernamelogin" [ngModelOptions]="{standalone: true}" placeholder="email:" type="text" tabindex="3"
+                                    required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input [(ngModel)]="passwordlogin" [ngModelOptions]="{standalone: true}" placeholder="password" type="password" tabindex="4"
+                                    required>
+                            </label>
+                        </div>
+                        <div>
+                            <button (click)="login()" id="register-submit">Log In</button>
+                        </div>
+                    </form>
+                    <!-- /Form -->
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- end registration -->
+    </div>
+</div>

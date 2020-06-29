@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="check">
+        <div class="col-md-3 cart-total">
+            <a class="continue" (click)="placeOrder()">Place Order</a>
+            <div class="price-details">
+                <h3>Price Details</h3>
+                <span>Total</span>
+                <span class="total1">Rs. {{totalPriceGames}}</span>
+                <span>Discount</span>
+                <span class="total1">Rs. {{discount}}</span>
+                <span>Delivery Charges</span>
+                <span class="total1">FREE</span>
+                <div class="clearfix"></div>
+            </div>
+            <ul class="total_price">
+                <li class="last_price">
+                    <h4>TOTAL</h4>
+                </li>
+                <li class="last_price"><span>Rs. {{totalPrice}}</span></li>
+                <div class="clearfix"> </div>
+            </ul>
+
+
+            <div class="clearfix"></div>
+            <a class="order" (click)="placeOrder()">Place Order</a>
+            <div class="total-item">
+                <h3>OPTIONS</h3>
+                <input type="text" placeholder="COUPONS" [(ngModel)]="cc" style="
+                width: 100%;
+                height: 40px;
+                margin-bottom: 20px;
+                padding: 10px;">
+                <a class="cpns" (click)="applyDiscount()">Apply Coupons</a>
+            </div>
+        </div>
+        <div class="col-md-9 cart-items" *ngFor="let i of cartItems">
+            <div class="cart-header">
+                <div class="close1"> </div>
+                <div class="cart-sec simpleCart_shelfItem">
+                    <div class="cart-item cyc">
+                        <img src="{{i.photos}}" class="img-responsive" alt="" />
+                    </div>
+                    <div class="cart-item-info">
+                        <h3><a>{{i.title}}</a></h3>
+
+                        <div class="delivery">
+                            <p>Service Charges : FREE</p>
+                            <span>Ratings: {{i.rating}}</span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
